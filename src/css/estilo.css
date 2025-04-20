@@ -4,6 +4,10 @@
     box-sizing:border-box;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 .anchor-novisual{
     text-decoration: none;
     color: inherit;
