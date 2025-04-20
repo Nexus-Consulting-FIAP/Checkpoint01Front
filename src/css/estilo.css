@@ -3,3 +3,42 @@
     padding:0;
     box-sizing:border-box;
 }
+
+#footer{
+    height: 20vh;
+    font-size: 120%;
+    background-color: var(--bg-color);
+    padding: 2rem;
+    color: var(--darker-main-color);
+
+}
+
+#footer h1, #footer div, #footer p{
+    margin-bottom: 6px;
+}
+
+#footer #contacts{
+    display: flex;
+    gap: 30%;
+}
+
+#footer hr{
+    margin-top: 1rem;
+    border-color: var(--darker-main-color);
+}
+
+@media screen and (max-width: 1000px){
+    #footer #contacts{
+        display: flex;
+        gap: 10%;
+    }
+}
+
+:root {
+    --main-color: #ff3b4b;
+    --darker-main-color: #800020;
+    --text-color: #ffffff;
+    --text-color-2: #231713;
+    --bg-color: #d6d5d0;
+    --bg-color-2: #0f0f0f;
+}
