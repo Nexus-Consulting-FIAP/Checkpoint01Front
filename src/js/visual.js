@@ -19,3 +19,12 @@ window.onscroll = function() {
       isUp = false;
     }
 }
+
+document.querySelectorAll('.product').forEach(product => {
+    const img = product.querySelector('img');
+    const src = img.getAttribute('src');
+    product.style.backgroundImage = `url(${src})`;
+    product.style.backgroundSize = 'cover';
+    product.style.backgroundPosition = 'center';
+    img.style.display = 'none'; // esconde o img
+});
