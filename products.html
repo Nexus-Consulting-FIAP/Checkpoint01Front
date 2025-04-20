@@ -38,7 +38,8 @@
         </header>
         <div id="content">
             <main>
-                <article class="product" data-nome="Château Margaux" data-tipo="Tinto" data-safra="Cabernet Sauvignon" data-preco="1299.99">
+                <article class="product" data-nome="Château Margaux" data-tipo="Tinto" data-safra="Cabernet Sauvignon"
+                    data-preco="1299.99">
                     <img src="/src/assets/vinho_01.webp" alt="Château Margaux">
                     <div class="description">
                         <h3>Château Margaux</h3>
@@ -49,20 +50,23 @@
                         </div>
                     </div>
                 </article>
-     
-                <article class="product" data-nome="Vega Sicilia Único" data-tipo="Tinto" data-safra="Merlot" data-preco="999.90">
+
+                <article class="product" data-nome="Vega Sicilia Único" data-tipo="Tinto" data-safra="Merlot"
+                    data-preco="999.90">
                     <img src="/src/assets/vinho_02.webp" alt="Vega Sicilia Único">
                     <div class="description">
                         <h3>Vega Sicilia Único</h3>
-                        <p>Ícone espanhol de Ribera del Duero, envelhecido por décadas, com notas complexas de frutas e madeira.</p>
+                        <p>Ícone espanhol de Ribera del Duero, envelhecido por décadas, com notas complexas de frutas e
+                            madeira.</p>
                         <div class="buy">
                             <p class="price">R$999,90</p>
                             <button type="submit">Comprar</button>
                         </div>
                     </div>
                 </article>
-                
-                <article class="product" data-nome="Cloudy Bay" data-tipo="Branco" data-safra="Pinot Noir" data-preco="299.90">
+
+                <article class="product" data-nome="Cloudy Bay" data-tipo="Branco" data-safra="Pinot Noir"
+                    data-preco="299.90">
                     <img src="/src/assets/vinho_03.webp" alt="Cloudy Bay">
                     <div class="description">
                         <h3>Cloudy Bay</h3>
@@ -73,8 +77,9 @@
                         </div>
                     </div>
                 </article>
-                
-                <article class="product" data-nome="Moët & Chandon" data-tipo="Espumante" data-safra="Malbec" data-preco="459.00">
+
+                <article class="product" data-nome="Moët & Chandon" data-tipo="Espumante" data-safra="Malbec"
+                    data-preco="459.00">
                     <img src="/src/assets/vinho_01.webp" alt="Moët & Chandon">
                     <div class="description">
                         <h3>Moët & Chandon</h3>
@@ -85,8 +90,9 @@
                         </div>
                     </div>
                 </article>
-                
-                <article class="product" data-nome="Mateus Rosé" data-tipo="Rosé" data-safra="Merlot" data-preco="89.99">
+
+                <article class="product" data-nome="Mateus Rosé" data-tipo="Rosé" data-safra="Merlot"
+                    data-preco="89.99">
                     <img src="/src/assets/vinho_02.webp" alt="Mateus Rosé">
                     <div class="description">
                         <h3>Mateus Rosé</h3>
@@ -102,9 +108,9 @@
             <aside>
                 <h2>Filtros</h2>
                 <div class="nomevinho">
-                     <input type="text" id="filter-name" placeholder="Nome do vinho ..."> 
+                    <input type="text" id="filter-name" placeholder="Nome do vinho ...">
                 </div>
-              
+
                 <div class="filter custom-select">
                     <h3>Tipo do vinho</h3>
                     <select name="wine-type" id="filter-type">
@@ -124,43 +130,45 @@
                         <option value="Malbec">Malbec</option>
                         <option value="Pinot Noir">Pinot Noir</option>
                     </select>
+
                 </div>
-                   
+                <div class="filter">
+                    <h3>Preço</h3>
+                    <input type="range" id="filter-price" min="0" max="1500" value="1500">
+                    <span id="price-value">R$1500</span>
                 </div>
-                 <div class="filter">
-                        <h3>Preço</h3>
-                        <input type="range" id="filter-price" min="0" max="1500" value="1500">
-                        <span id="price-value">R$1500</span>
-            </aside>
         </div>
-        <footer id="footer" class="host-grotesk-default">
-            <h1>Contato</h1>
-            <div id="contacts">
-                <div>
-                    <p><b>Redes Sociais</b></p>
-                    <p>@vinheriaagnello</p>
-                </div>
-                <div>
-                    <p><b>E-mail</b></p>
-                    <p>vinheriaagnello@gmail.com</p>
-                </div>
-                <div>
-                    <p><b>Telefone</b></p>
-                    <p>(11) 1234-5678</p>
-                </div>
+
+        </aside>
+    </div>
+    <footer id="footer" class="host-grotesk-default">
+        <h1>Contato</h1>
+        <div id="contacts">
+            <div>
+                <p><b>Redes Sociais</b></p>
+                <p>@vinheriaagnello</p>
             </div>
-            <hr>
-            <div id="back-button">
-                <div>
-                    <span class="material-icons">
-                        <a href="#content" class="anchor-novisual">arrow_circle_up</a>
-                    </span>
-                </div>
-                <div>
-                    <p>Voltar ao topo</p>
-                </div>
+            <div>
+                <p><b>E-mail</b></p>
+                <p>vinheriaagnello@gmail.com</p>
             </div>
-        </footer>
+            <div>
+                <p><b>Telefone</b></p>
+                <p>(11) 1234-5678</p>
+            </div>
+        </div>
+        <hr>
+        <div id="back-button">
+            <div>
+                <span class="material-icons">
+                    <a href="#content" class="anchor-novisual">arrow_circle_up</a>
+                </span>
+            </div>
+            <div>
+                <p>Voltar ao topo</p>
+            </div>
+        </div>
+    </footer>
     </div>
 
     <script src="/src/js/visual.js"></script>
