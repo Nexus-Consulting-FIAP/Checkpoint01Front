@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CP1 - WEB/DEV</title>
     <link rel="shortcut icon" href="">
     <!-- IMPORTANDO AS FONTES -->
-    <link rel="stylesheet" href="src/css/fontes.css"/>
+    <link rel="stylesheet" href="src/css/fontes.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap'); 
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
     </style>
     <link rel="stylesheet" href="src/css/estilo.css">
     <link rel="stylesheet" href="src/css/products.css">
+    <link rel="stylesheet" href="src/css/select.css">
 </head>
+
 <body>
     <div id="container">
         <header>
@@ -36,20 +39,23 @@
                     <img src="/src/assets/vinho_01.webp" alt="">
                     <div class="description">
                         <h3>Nome</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates perferendis illo blanditiis, delectus voluptatem quisquam labore nostrum aliquam esse modi libero molestiae accusantium ipsa recusandae consequatur cupiditate doloremque? Numquam?
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates perferendis illo
+                            blanditiis, delectus voluptatem quisquam labore nostrum aliquam esse modi libero molestiae
+                            accusantium ipsa recusandae consequatur cupiditate doloremque? Numquam?
                         </p>
                         <div class="buy">
                             <p class="price">$19.99</p>
                             <button type="submit">Comprar</button>
                         </div>
                     </div>
-                    
+
                 </article>
                 <article class="product">
                     <img src="/src/assets/vinho_02.webp" alt="">
                     <div class="description">
                         <h3>Nome</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi magnam praesentium odveniet assumenda corrupti  apskfnpasf apsofpoaf apf 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi magnam praesentium
+                            odveniet assumenda corrupti apskfnpasf apsofpoaf apf
                         </p>
                         <div class="buy">
                             <p class="price">$19.99</p>
@@ -61,7 +67,8 @@
                     <img src="/src/assets/vinho_03.webp" alt="">
                     <div class="description">
                         <h3>Nome</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi magnam praesentium odveniet assumenda corrupti  apskfnpasf apsofpoaf apf 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi magnam praesentium
+                            odveniet assumenda corrupti apskfnpasf apsofpoaf apf
                         </p>
                         <div class="buy">
                             <p class="price">$19.99</p>
@@ -73,7 +80,8 @@
                     <img src="/src/assets/vinho_01.webp" alt="">
                     <div class="description">
                         <h3>Nome</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi magnam praesentium odveniet assumenda corrupti  apskfnpasf apsofpoaf apf 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi magnam praesentium
+                            odveniet assumenda corrupti apskfnpasf apsofpoaf apf
                         </p>
                         <div class="buy">
                             <p class="price">$19.99</p>
@@ -85,7 +93,8 @@
                     <img src="/src/assets/vinho_02.webp" alt="">
                     <div class="description">
                         <h3>Nome</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi magnam praesentium odveniet assumenda corrupti  apskfnpasf apsofpoaf apf 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi magnam praesentium
+                            odveniet assumenda corrupti apskfnpasf apsofpoaf apf
                         </p>
                         <div class="buy">
                             <p class="price">$19.99</p>
@@ -94,11 +103,14 @@
                     </div>
                 </article>
             </main>
-            
+
             <aside>
                 <h2>Filters</h2>
-                <input type="text" placeholder="Nome do vinho">
-                <div class="filter">
+                <div class="nomevinho">
+                     <input type="text" placeholder="Nome do vinho ..."> 
+                </div>
+              
+                <div class="filter custom-select">
                     <h3>Tipo do vinho</h3>
                     <select name="wine-type" id="wine-type">
                         <option>Nenhum</option>
@@ -108,7 +120,7 @@
                         <option>Espumante</option>
                     </select>
                 </div>
-                <div class="filter">
+                <div class="filter custom-select">
                     <h3>Safra</h3>
                     <select name="wine-safra" id="wine-safra">
                         <option>Nenhum</option>
@@ -117,15 +129,16 @@
                         <option>Rosé</option>
                         <option>Espumante</option>
                     </select>
-                <div class="filter">
-                    <h3>Preço</h3>
-                    <input type="range" min="0" max="1000" value="1000">
+                   
                 </div>
-                </div>
+                 <div class="filter">
+                        <h3>Preço</h3>
+                        <input type="range" min="0" max="1000" value="1000">
+                    </div>
             </aside>
         </div>
         <footer id="footer" class="host-grotesk-default">
-            <h1 >Contato</h1>
+            <h1>Contato</h1>
             <div id="contacts">
                 <div>
                     <p><b>Redes Sociais</b></p>
@@ -155,5 +168,7 @@
     </div>
 
     <script src="/src/js/visual.js"></script>
+    <script src="/src/js/selectvisual.js"></script>
 </body>
+
 </html>
