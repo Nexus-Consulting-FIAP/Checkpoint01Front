@@ -144,16 +144,6 @@ nav .main {
     width: 50vw;
 }
 
-@media screen and (max-width: 1500px){
-    #about-description p{
-        font-size: 1.5rem;
-    }
-}
-@media screen and (max-width: 955px){
-    #about-description p{
-        font-size: 1rem;
-    }
-}
 #about-description .images-container {
     position: relative;
     padding-left: 18rem;
@@ -177,6 +167,21 @@ nav .main {
     left: 8vw; 
     width: 100%; 
     height: 100%;
+}
+@media screen and (max-width: 1390px){
+    #about-description p{
+        font-size: 1.3rem;
+    }
+    #about-description img{
+        width: 18rem;
+        height: 18rem;
+        border-radius: 50px;
+    }
+}
+@media screen and (max-width: 955px){
+    #about-description p{
+        font-size: 1rem;
+    }
 }
 
 /*=======================
