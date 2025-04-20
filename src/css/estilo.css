@@ -4,8 +4,14 @@
     box-sizing:border-box;
 }
 
+.anchor-novisual{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Footer*/
 #footer{
-    height: 20vh;
+    height: 25vh;
     font-size: 120%;
     background-color: var(--bg-color);
     padding: 2rem;
@@ -27,10 +33,22 @@
     border-color: var(--darker-main-color);
 }
 
+#footer > #back-button {
+    margin-top: 0.75rem;
+    text-align: end;
+}
+
+#footer span{
+    margin-right: 2.35rem;
+}
+
 @media screen and (max-width: 1000px){
     #footer #contacts{
         display: flex;
         gap: 10%;
+    }
+    #footer {
+        height: 30vh;
     }
 }
 
