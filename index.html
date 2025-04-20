@@ -10,14 +10,24 @@
     <title>CP1 - WEB/DEV</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Início</a></li>
+                <li><a href="#welcome">Produtos</a></li>
+                <li><a href="#about_us">Sobre nós</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <div id="welcome">
         <h1>Vinheria Agnello</h1>
         <h2>O Vinho certo para cada momento</h2>
         <button>Saiba Mais</button>
     </div>
-    <div id="about_us">
+    <div id="about-us">
         <h1>Conheça a Vinheria</h1>
-        <div id="secao01">
+        <div id="about-description">
             <p>Estamos no mercado há mais de 15 anos, oferecendo vinhos de qualidade e atendimento personalizado. Fundada pelo Sr. Giulio, nossa vinheria nasceu com o propósito 
                 de ajudar cada cliente a encontrar o vinho certo para cada momento.
                 Nosso time tem um perfil consultivo: ouvimos, orientamos e indicamos rótulos que fazem sentido para o seu gosto e ocasião. Acreditamos que comprar vinho deve ser
@@ -26,17 +36,29 @@
                 tornar cada visita especial.
             </p>
         </div>
-        <div id="secao02">
+        <div id="about-images">
             <img src="src/assets/imagem_vinho_taca.jpg" alt="Vinho_taça">
             <img src="src/assets/imagem_homem.jpg" alt="Homem_olhando_vinho">
         </div>
     </div>
-    <div id="destaques">
-        <img src="src/assets/vinho_01.webp" alt="Vinho_01">
-        <img src="src/assets/vinho_02.webp" alt="Vinho_02">
-        <img src="src/assets/vinho_03.webp" alt="Vinho_03">
+    <div id="highlights">
+        <div class="card">
+            <img src="src/assets/vinho_01.webp" alt="Vinho_01">
+            <h2 class="disabled">Novidade!</h2>
+        </div>
+        <div class="card">
+            <img src="src/assets/vinho_02.webp" alt="Vinho_02">
+            <h2>Novidade!</h2>
+        </div>
+        <div class="card">
+            <img src="src/assets/vinho_03.webp" alt="Vinho_03">
+            <h2 class="disabled">Novidade!</h2>
+        </div>
+ 
+
+>
     </div>
-    <footer>
+    <footer id="footer">
         <p>Contato</p>
         <div>
             <p>Redes Sociais</p>
