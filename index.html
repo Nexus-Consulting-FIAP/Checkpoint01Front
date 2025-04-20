@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="">
     <!-- IMPORTANDO AS FONTES -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -14,7 +13,7 @@
     <!-- CHAMANDO CSS EXTERNO -->
     <link rel="stylesheet" href="./src/css/estilo.css">
     <link rel="stylesheet" href="./src/css/fontes.css">
-    <!--FONTES GOOGLE-->
+    <!--ICONS GOOGLE-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>CP1 - WEB/DEV</title>
 </head>
@@ -27,8 +26,8 @@
                     <li><a href="#welcome" class="main">Vinheria Agnello</a></li>
                 </div>
                 <div class="right">
-                    <li><a href="products.html">Produtos</a></li>
                     <li><a href="#about-us">Sobre nós</a></li>
+                    <li><a href="#highlights">Produtos</a></li>
                     <li><a href="#footer">Contato</a></li>
                 </div>
             </ul>
@@ -53,17 +52,23 @@
         </div>
     </section>
     <section id="highlights">
-        <div class="card">
-            <img src="src/assets/vinho_01.webp" alt="Vinho_01">
-            <h2 class="disabled">Novidade!</h2>
+        <div>
+            <h1 class="host-grotesk-default">Destaques</h1>
         </div>
-        <div class="card">
-            <img src="src/assets/vinho_02.webp" alt="Vinho_02">
-            <h2>Novidade!</h2>
+        <div id="products">
+            <div class="card">
+                <img src="src/assets/vinho_01.webp" alt="Vinho_01">
+            </div>
+            <div class="card">
+                <img src="src/assets/vinho_02.webp" alt="Vinho_02">
+                <h2 class="host-grotesk-default">Novidade!</h2>
+            </div>
+            <div class="card">
+                <img src="src/assets/vinho_03.webp" alt="Vinho_03">
+            </div>
         </div>
-        <div class="card">
-            <img src="src/assets/vinho_03.webp" alt="Vinho_03">
-            <h2 class="disabled">Novidade!</h2>
+        <div>
+            <a href="products.html" class="anchor-novisual"><button class="buttondesign">Ver catálogo</button></a>
         </div>
     </section>
     </div>

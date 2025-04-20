@@ -10,6 +10,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.buttondesign {
+    margin-top: 5vh;
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    background-color: var(--bg-color-2);
+    font-size: xx-large;
+}
+
 .anchor-novisual {
     text-decoration: none;
     color: inherit;
@@ -50,6 +61,7 @@ nav .left {
 nav .right {
     display: flex;
     margin-right: 4rem;
+    border-color: var(--darker-main-color);
 }
 @media screen and (max-width: 718px){
     nav .right{
@@ -62,15 +74,15 @@ nav li {
 }
 
 nav a:not(.main) {
-    color: var(--text-color);
+    color: var(--main-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--main-color);
     border-radius: 1rem;
 }
 
 nav .main {
-    color: var(--text-color);
+    color: var(--main-color);
     text-decoration: none;
     font-size: 2rem;
 }
@@ -80,7 +92,7 @@ nav .main {
 =======================*/
 #welcome {
     background-image: url(/src/assets/vinho_principal.png);
-    background-size: auto 140.1vh;
+    background-size: 100vw 100vh;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -120,7 +132,7 @@ nav .main {
 }
 
 #about-us h1 {
-    color: var(--text-color-2);
+    color: var(--darker-main-color);
     font-size: 3rem;
     margin: 2.3rem 0;
 }
@@ -138,6 +150,7 @@ nav .main {
     margin-top: 5rem;
     width: 75vw;
     height: 75vh;
+    font-size: 2rem;
 }
 
 #about-description .text-container{
@@ -161,6 +174,7 @@ nav .main {
     left: 22.5vw; 
     z-index:1;
 }
+
 .img2-clerk{
     position: absolute; 
     top: 30vh; 
@@ -168,19 +182,28 @@ nav .main {
     width: 100%; 
     height: 100%;
 }
-@media screen and (max-height: 1000px){
+
+@media screen and (max-height: 770px){
     #about-description p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     #about-description img{
-        width: 18rem;
-        height: 18rem;
+        width: 15rem;
+        height: 15rem;
         border-radius: 50px;
     }
 }
-@media screen and (max-width: 955px){
+@media screen and (max-height: 550px){
+    #about-description{
+        margin-top: 0;
+    }
     #about-description p{
-        font-size: 1rem;
+        font-size: 16px;
+    }
+    #about-description img{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50px;
     }
 }
 
@@ -188,18 +211,66 @@ nav .main {
        HIGHLIGHTS
 =======================*/
 #highlights {
+    padding-top: 5%;
     background-color: var(--bg-color-2);
+    gap: 2rem;
+    text-align: center;
+}
+
+#highlights h1{
+    padding-bottom: 6rem;
+    font-size: 60px;
+    color: var(--bg-color);
+}
+
+#products{
+    justify-content: center;
+    gap: 10vw;
+    display: flex;
+}
+
+#products h2{
+    color: var(--main-color)
+}
+
+#highlights img{
+    width: 25vw;
+    border-radius: 20px;
+}
+
+@media screen and (max-height: 950px) {
+    #highlights {
+        padding-top: 0%;
+        background-color: var(--bg-color-2);
+        gap: 0;
+        text-align: center;
+    }
+    #highlights h1{
+        padding-bottom: 0rem;
+    }
+    #highlights img{
+        width: 20vw;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    #highlights h1{
+        font-size: 30px;
+    }
+    #highlights img{
+        width: 8vw;
+    }
 }
 
 /*=======================
          FOOTER
 =======================*/
 #footer {
-    height: 27vh;
+    height: 30vh;
     font-size: 120%;
     background-color: var(--bg-color);
     padding: 2rem;
-    color: var(--darker-main-color) !important
+    color: var(--darker-main-color) !important;
 }
 
 #footer h1,
@@ -235,11 +306,11 @@ nav .main {
     }
 
     #footer {
-        height: 32vh;
+        height: 28vh;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 610px) {
     #footer {
         height: 42vh;
     }
@@ -252,6 +323,24 @@ nav .main {
         margin-top: 2rem;
     }
 
+}
+
+@media screen and (max-height: 850px) {
+    #footer {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-height: 620px) {
+    #footer {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-height:320px) {
+    #footer {
+        height: 180vh;
+    }
 }
 
 /*=======================

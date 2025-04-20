@@ -5,12 +5,17 @@
     width: 100vw;
 }
 
+#footer{
+    width: 100vw !important;
+}
+
 #content {
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: 20px;
     padding: 20px;
     margin-top: 3rem;
+    min-height: 68vh;
 }
 
 /*=======================
