@@ -50,6 +50,11 @@ nav .right {
     display: flex;
     margin-right: 4rem;
 }
+@media screen and (max-width: 718px){
+    nav .right{
+        display: grid;
+    }
+}
 
 nav li {
     margin: 1rem 1rem;
@@ -74,7 +79,7 @@ nav .main {
 =======================*/
 #welcome {
     background-image: url(/src/assets/vinho_principal.png);
-    background-size: 100vw;
+    background-size: 100vw 150vh;
     background-position: 0 -9rem;
     background-repeat: no-repeat;
     display: flex;
