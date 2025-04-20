@@ -1,5 +1,127 @@
 * {
+    font-family: "Gill Sans", sans-serif;
     margin:0;
     padding:0;
     box-sizing:border-box;
+    transition: 0.2s;
+}
+h1, h2, h3, p {
+    color: var(--text-color);
+}
+section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*=======================
+         HEADER
+=======================*/
+nav {
+    position: fixed;
+    width: 100vw;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+nav .left {
+    display: flex;
+    margin-left: 2rem;
+}
+nav .right {
+    display: flex;
+    margin-right: 4rem;
+}
+nav li {
+    margin: 1rem 1rem;
+}
+nav a:not(.main) {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 1rem;
+}
+nav .main {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/*=======================
+        WELCOME
+=======================*/
+#welcome {
+    background-image: url(/src/assets/vinho_principal.png);
+    background-size: 100vw;
+    background-position: 0 -9rem;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#welcome h1 {
+    font-size: 5rem;
+}
+#welcome a {
+    color: var(--darker-main-color);
+    background-color: var(--text-color);
+    text-decoration: none;
+    font-weight: 900;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+#welcome a:hover {
+    padding: 1.1rem 2.1rem;
+    border-radius: 0.5rem;
+    background: var(--bg-color);
+}
+
+/*=======================
+        ABOUT US
+=======================*/
+#about-us {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about-us h1 {
+    color: var(--text-color-2);
+    font-size: 3rem;
+    margin: 2.3rem 0;
+}
+#about-us p {
+    color: var(--text-color-2);
+    font-size: 1.9rem;
+}
+
+#about-description {
+    display: flex;
+    width: 90vw;
+}
+#about-description .images-container {
+    margin-left: 10rem;
+}
+
+/*=======================
+       HIGHLIGHTS
+=======================*/
+#highlights {
+    background-color: var(--bg-color-2);
+}
+
+/*=======================
+          ROOT
+=======================*/
+:root {
+    --main-color: #ff3b4b;
+    --darker-main-color: #800020;
+    --text-color: #ffffff;
+    --text-color-2: #231713;
+    --bg-color: #d6d5d0;
+    --bg-color-2: #0f0f0f;
 }
