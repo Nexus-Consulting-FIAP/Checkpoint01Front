@@ -131,11 +131,48 @@ nav .main {
 
 #about-description {
     display: flex;
-    width: 90vw;
+    margin-top: 5rem;
+    width: 75vw;
+    height: 75vh;
 }
 
+#about-description .text-container{
+    width: 50vw;
+}
+
+@media screen and (max-width: 1500px){
+    #about-description p{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 955px){
+    #about-description p{
+        font-size: 1rem;
+    }
+}
 #about-description .images-container {
-    margin-left: 10rem;
+    position: relative;
+    padding-left: 18rem;
+    width: 50vw;
+}
+
+#about-description img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50px;
+}
+
+.img1-wine{
+    position: absolute; 
+    left: 22.5vw; 
+    z-index:1;
+}
+.img2-clerk{
+    position: absolute; 
+    top: 30vh; 
+    left: 8vw; 
+    width: 100%; 
+    height: 100%;
 }
 
 /*=======================
@@ -191,6 +228,21 @@ nav .main {
     #footer {
         height: 32vh;
     }
+}
+
+@media screen and (max-width: 500px) {
+    #footer {
+        height: 42vh;
+    }
+
+    #footer #contacts {
+        display: grid;
+    }
+
+    #footer hr {
+        margin-top: 2rem;
+    }
+
 }
 
 /*=======================
