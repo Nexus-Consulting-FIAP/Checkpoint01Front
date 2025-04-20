@@ -46,7 +46,7 @@ html {
     margin-right: 2.35rem;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1267px){
     #footer #contacts{
         display: flex;
         gap: 10%;
