@@ -57,6 +57,7 @@ main {
     opacity: 100%;
 }
 .product .description:hover p:not(.price) {
+    line-clamp: 20;
     -webkit-line-clamp: 20;
 }
 .product .description p:not(.price) {
@@ -65,6 +66,7 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
+    line-clamp: 5;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
 }.product .description h3 {
@@ -100,9 +102,57 @@ button:hover {
 aside {
     width: 200px;
     padding: 10px;
+    background-color: rgba(var(--bg-color-2-rgb), 0.5)
 }
-aside ul {
-    list-style: none;
+aside .filter {
+    margin-top: 1rem;
+}
+aside h2, aside h3, aside span{
+    color: var(--text-color);
+}
+
+aside .input-text {
+    background-color: var(--bg-color-2);
+    color: var(--text-color);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+aside select {
+    color: var(--bg-color);
+    background-color: var(--bg-color-2);
+    background-image: none;
+    cursor: pointer;
+    appearance: none;
+    box-shadow: none;
+    flex: 1;
+    border: 0;
+    border-radius: .2rem;
+    padding: 0 1rem;
+}
+aside .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    border-radius: .25rem;
+}
+
+aside .price-container {
+    background-color: rgba(var(--bg-color-2-rgb), 0.5);
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+aside .price-container span {
+    background-color: var(--bg-color-2);
+    min-width: 4rem;
+    padding: 0.4rem;
+}
+aside .price-container input {
+    margin: 10px;
+    width: 100%;
 }
 
 /*=======================

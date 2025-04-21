@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     transition: 0.2s;
+    user-select: none;
+}
+*:focus {
+    outline: none;
 }
 
 html {
@@ -19,6 +23,9 @@ html {
     border-radius: 20px;
     background-color: var(--bg-color-2);
     font-size: xx-large;
+}
+.buttondesign:hover {
+    cursor: pointer;
 }
 
 .anchor-novisual {
@@ -229,13 +236,19 @@ nav .main {
     display: flex;
 }
 
-#products h2{
-    color: var(--main-color)
+.product {
+    height: 20rem;
+    width: 13rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.product h2{
+    background-color: rgba(var(--darker-main-color-rgb), 0.5);
+    color: var(--darker-main-color);
 }
 
-#highlights img{
+.product img{
     width: 25vw;
-    border-radius: 20px;
 }
 
 @media screen and (max-height: 950px) {
@@ -349,6 +362,7 @@ nav .main {
 :root {
     --main-color: #ff3b4b;
     --darker-main-color: #800020;
+    --darker-main-color-rgb: 128, 0, 32;
     --text-color: #ffffff;
     --text-color-2: #231713;
     --bg-color: #d6d5d0;

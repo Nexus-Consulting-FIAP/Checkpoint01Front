@@ -37,10 +37,11 @@ const products = document.querySelectorAll('.product');
 let priceValue = document.getElementById('price-value');
 
 function filterProducts() {
-  const name = nameInput.value.toLowerCase();
-  const type = typeSelect.value;
-  const safra = safraSelect.value;
-  const maxPrice = parseFloat(priceRange.value);
+    console.log("bomdia");
+    const name = nameInput.value.toLowerCase();
+    const type = typeSelect.value;
+    const safra = safraSelect.value;
+    const maxPrice = parseFloat(priceRange.value);
 
   products.forEach(product => {
     const productName = product.dataset.nome.toLowerCase();
@@ -54,18 +55,17 @@ function filterProducts() {
     const matchPrice = productPrice <= maxPrice;
 
     if (matchName && matchType && matchSafra && matchPrice) {
-      product.style.display = "flex";
+        product.style.display = "flex";
     } else {
-      product.style.display = "none";
+        product.style.display = "none";
     }
   });
 }
 
-// Event listeners
 nameInput.addEventListener('input', filterProducts);
 typeSelect.addEventListener('change', filterProducts);
 safraSelect.addEventListener('change', filterProducts);
 priceRange.addEventListener('input', () => {
-  priceValue.textContent = `R$${priceRange.value}`;
-  filterProducts();
+    priceValue.textContent = `R$${priceRange.value}`;
+    filterProducts();
 });

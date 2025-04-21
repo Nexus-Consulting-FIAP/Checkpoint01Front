@@ -17,7 +17,6 @@
     <!--FONTES GOOGLE-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>CP1 - WEB/DEV</title>
-    <link rel="stylesheet" href="src/css/select.css">
 </head>
 
 <body>
@@ -107,36 +106,40 @@
 
             <aside>
                 <h2>Filtros</h2>
-                <div class="filter nomevinho">
-                    <input type="text" id="filter-name" placeholder="Nome do vinho ...">
-                    <br><br>
+                <div class="filter">
+                    <input class="input-text" type="text" id="filter-name" placeholder="Nome do vinho ...">
                 </div>
-
-                <div class="filter custom-select">
+                <div class="filter">
                     <h3>Tipo do vinho</h3>
-                    <select name="wine-type" id="filter-type">
-                        <option value="">Nenhum</option>
-                        <option value="Tinto">Tinto</option>
-                        <option value="Branco">Branco</option>
-                        <option value="Rosé">Rosé</option>
-                        <option value="Espumante">Espumante</option>
-                    </select>
+                    <div class="select">
+                        <select name="wine-type" id="filter-type">
+                            <option value="">Nenhum</option>
+                            <option value="Tinto">Tinto</option>
+                            <option value="Branco">Branco</option>
+                            <option value="Rosé">Rosé</option>
+                            <option value="Espumante">Espumante</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="filter custom-select">
+                <div class="filter">
                     <h3>Safra</h3>
-                    <select name="wine-safra" id="filter-safra">
-                        <option value="">Nenhum</option>
-                        <option value="Cabernet Sauvignon">Cabernet Sauvignon</option>
-                        <option value="Merlot">Merlot</option>
-                        <option value="Malbec">Malbec</option>
-                        <option value="Pinot Noir">Pinot Noir</option>
-                    </select>
+                    <div class="select">
+                        <select name="wine-safra" id="filter-safra">
+                            <option value="">Nenhum</option>
+                            <option value="Cabernet Sauvignon">Cabernet Sauvignon</option>
+                            <option value="Merlot">Merlot</option>
+                            <option value="Malbec">Malbec</option>
+                            <option value="Pinot Noir">Pinot Noir</option>
+                        </select>
+                    </div>
 
                 </div>
                 <div class="filter">
                     <h3>Preço</h3>
-                    <input type="range" id="filter-price" min="0" max="1500" value="1500">
-                    <span id="price-value">R$1500</span>
+                    <div class="price-container">
+                        <span id="price-value">R$1500</span>
+                        <input type="range" id="filter-price" min="0" max="1500" value="1500">
+                    </div>
                 </div>
         </div>
 
@@ -163,7 +166,6 @@
     </div>
 
     <script src="/src/js/visual.js"></script>
-    <script src="/src/js/selectvisual.js"></script>
 </body>
 
 </html>
