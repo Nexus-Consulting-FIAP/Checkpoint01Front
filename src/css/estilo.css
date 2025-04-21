@@ -99,7 +99,7 @@ nav .main {
 =======================*/
 #welcome {
     background-image: url(/src/assets/vinho_principal.png);
-    background-size: 100vw 100vh;
+    background-size: 100rem 100rem;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
